@@ -1,0 +1,51 @@
+.block {
+  width: 332px;
+  height: 100px;
+  position: relative;
+  border: #c2bfbe2c solid 1px;
+}
+
+.border {
+  padding-right: 17px;
+  padding-left: 25px;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.block:before,
+.block:after,
+.border:before,
+.border:after {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  content: "";
+  border-color: #ffffff;
+  border-style: solid;
+}
+
+.block:before {
+  left: -1px;
+  top: -1px;
+  border-width: 1px 0 0 1px;
+}
+
+.block:after {
+  right: -1px;
+  top: -1px;
+  border-width: 1px 1px 0 0;
+}
+
+.border:before {
+  right: -1px;
+  bottom: -1px;
+  border-width: 0 1px 1px 0;
+}
+
+.border:after {
+  left: -1px;
+  bottom: -1px;
+  border-width: 0 0 1px 1px;
+}
